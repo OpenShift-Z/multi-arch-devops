@@ -88,6 +88,15 @@ To enable multi-architecture, docker added support for manifests which let you l
 
 By default the Docker daemon will look at its current operating system and architecture but it is possible to force download of a specific platform/architecture using the `--platform` command which is available in docker API [1.32+](https://docs.docker.com/engine/api/v1.32/) and need `experimental features` turned on in Docker daemon. The full specification of multi-architecture manifests can be found [here](https://docs.docker.com/registry/spec/manifest-v2-2/). More information on `docker pull` be found in the official docs [here](https://docs.docker.com/engine/reference/commandline/pull/).
 
+Manifests support the following combinations:
+* arch (mostly Go arch names like `amd64`, `s390x` etc)
+* os (`linux`, `windows` etc)
+* os-version (mostly used for `windows`)
+* variant (only used for `arm`)
+* os-feature (mostly for `windows`)
+
+> All these instructions are valid for `podman` and `buildah`. Just replace `docker` with `buildah` for manifest commands.
+
 <div style="page-break-after: always;"></div>
 
 ### Building multi-arch images
