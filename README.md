@@ -1,5 +1,7 @@
 # Multi-architecture devOps using OpenShift
 
+## WE ARE MODIFYING THIS TO USE THE JENKINS PLUGINS WITH BUILD CONFIGS ETC FOR OCP 4.X. THE MECHANISM BELOW IS STILL VALID AS A LEARNING TOOL.
+
 In this lab you will learn how to deploy a Jenkins pipeline to build your source code from github and deploy it to both OpenShift on Intel and OpenShift on IBM Z/LinuxONE. While there are several other steps in a devOps process, we will only focus on the deployment aspect here.
 
 - [Multi-architecture devOps using OpenShift](#multi-architecture-devops-using-openshift)
